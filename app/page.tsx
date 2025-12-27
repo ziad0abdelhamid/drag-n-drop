@@ -2,18 +2,14 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Header } from "@/components/header"
 import { ArrowRight, Sparkles, Crown, Zap } from "lucide-react"
 import { useI18n } from "@/lib/i18n-context"
-import { Footer } from "react-day-picker"
 
 export default function HomePage() {
   const { t } = useI18n()
 
   return (
     <div className="min-h-screen bg-background overflow-hidden">
-      <Header />
-
       {/* Artistic Background Elements */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-60" />

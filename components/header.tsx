@@ -73,8 +73,8 @@ export function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <div className="hidden sm:flex items-center gap-1 border-l border-r border-border px-3">
-              <Globe className="w-4 h-4 text-muted-foreground" />
+            <div className="flex items-center gap-1 border-l border-r border-border px-3">
+              {/* <Globe className="w-4 h-4 text-muted-foreground" /> */}
               {Object.entries(languages).map(([code]) => (
                 <Button
                   key={code}

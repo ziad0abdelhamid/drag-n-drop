@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { I18nProvider } from "@/lib/i18n-context"
 import Footer from "@/components/footer"
 import "./globals.css"
+import { Header } from "@/components/header"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -43,7 +44,8 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <I18nProvider>
-            {children}
+            <Header />
+            <main className="min-h-[calc(97vh-64px-354px)]">{children}</main>
             <Footer />
           </I18nProvider>
         </ThemeProvider>
